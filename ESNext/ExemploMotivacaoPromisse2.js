@@ -21,20 +21,12 @@ const getTurma = letra => {
     })
 }
 
-let nome = []
-getTurma('A').then (alunos => {
-    nome = nome.concat(alunos.map(a => `A: ${a.nome}`))
-    getTurma('B').then (alunos => {
-        nome = nome.concat(alunos.map(a => `B: ${a.nome}`))
-        getTurma('C').then (alunos => {
-            nome = nome.concat(alunos.map(a => `C: ${a.nome}`))
-            console.log(nome)
-        })
-    })
-})
 
 Promise.all([getTurma('A'), getTurma('B'), getTurma('C')])
     .then(turmas => [].concat(...turmas))
     .then(alunos => alunos.map(aluno => aluno.nome))
     //.then(turmas => turmas.map(turma => turma.nome))
     .then(nomes => console.log(nomes))
+    .catch(e => console.log(e.message))
+
+getTurma('D').catch(e => console.log(e.message))
