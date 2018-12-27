@@ -1,0 +1,2 @@
+Só um documento com os valores rgb de umas cores que eu gostei muito
+rgb(112, 96, 255); azul meio fraco
