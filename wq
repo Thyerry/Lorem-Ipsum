@@ -1,0 +1,139 @@
+[33mcommit 49517c06a56933dfcf96712684e6c1665b5ba50d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Thyerry <thyerry.nunes@gmail.com>
+Date:   Mon Dec 31 08:44:59 2018 -0300
+
+    mais um teste marotin
+
+[33mcommit 475011ff85af95eeb980a26c1e46682c4e5497f8[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Thu Dec 27 21:54:35 2018 -0300
+
+    ainda mais css
+
+[33mcommit 5a63d0385210fbfc9c4f1ec04604526643f62b22[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Thu Dec 27 19:29:45 2018 -0300
+
+    Mais exercicios css
+
+[33mcommit 29a0a302dac933ea293d794de352ad0c25d33734[m
+Merge: 7d0e9db 1eb513e
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Thu Dec 27 18:03:44 2018 -0300
+
+    Merge branch 'master' of https://github.com/Thyerry/Lorem-Ipsum
+
+[33mcommit 7d0e9db6f69a8fe613b243ed9fcd08d075d5554d[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Thu Dec 27 18:02:48 2018 -0300
+
+    Descobrindo algumas coisas como pseudo-classes e pseudo-elementos.
+
+[33mcommit 1eb513e2e9ceb0858ecb808d3d88fc69f0ba7539[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Thu Dec 27 18:21:45 2018 -0200
+
+    Create cores.txt
+
+[33mcommit c31392ec9fdf2a5298ddef4959a32dd48f23daba[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Thu Dec 27 15:49:07 2018 -0300
+
+    Iniciando a parte de CSS3
+
+[33mcommit b92b0f277e5219af06afc0a7c2b548b1b90752ed[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Thu Dec 27 13:46:24 2018 -0300
+
+    besteirinhas com tags não visuais
+
+[33mcommit 411480e99e1129b5a800301a68a5f1115d07c39a[m[33m ([m[1;31morigin/docs[m[33m)[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Wed Dec 26 23:41:19 2018 -0300
+
+    uma página tratando um vídeo e uma barrinha de progressão
+
+[33mcommit 89f562b91fad8cbcde0104fa19c325d3830b02bc[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Wed Dec 26 12:46:27 2018 -0300
+
+    n sei
+
+[33mcommit b2b51d9bdf7cfa3f3d358f10d108be72fcc33577[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Wed Dec 26 12:45:57 2018 -0300
+
+    vortei
+
+[33mcommit 5a162a8fdbc0a61333e95b56ef8a2de56ac5f041[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Sun Dec 9 23:53:41 2018 -0300
+
+    Exercicio de links, formulários e um pouco de backend
+
+[33mcommit 442ba88d665e5d9c3a13e774b2fd78aa0c5e9fec[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Sun Dec 9 16:48:15 2018 -0300
+
+    Listas
+
+[33mcommit b68eb543b6c81162c05ff6574f115a31298dd2fa[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Sun Dec 9 14:53:09 2018 -0300
+
+    tags de texto html ultrapassadas
+
+[33mcommit 6af5aec1ecad177b0e422ebf0aef028ac2adf4fc[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Sun Dec 9 01:10:41 2018 -0300
+
+    Uns negócio em html e a minha primeira requisição ajax \o
+
+[33mcommit 02d9df657364506f8b999832fcd46a58be221cb4[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Wed Dec 5 00:51:01 2018 -0300
+
+    Usando Async e Await no exemplo de promise
+
+[33mcommit 6e3120511b7f2c79cd6ca2a9d61e80d4465b36e5[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Tue Dec 4 23:56:29 2018 -0300
+
+    ops
+
+[33mcommit d85a760059152836121485a9fe6e0003aa089f78[m
+Merge: b6b02c6 162c74b
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Tue Dec 4 23:50:25 2018 -0300
+
+    Merge branch 'master' of https://github.com/Thyerry/Lorem-Ipsum
+
+[33mcommit 162c74b8584ce74929923c29d1df8002194e37b3[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Wed Dec 5 00:48:50 2018 -0200
+
+    Update README.md
+
+[33mcommit b6b02c6523862a1ec0b27cac5718cd3e7bb313c1[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Tue Dec 4 23:46:34 2018 -0300
+
+    Promise eh bonito
+
+[33mcommit 01703bc101ac8e5f5bb444d14383f46ac2ad0f5b[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Wed Dec 5 00:18:05 2018 -0200
+
+    Update README.md
+
+[33mcommit 30a47509f2204fd93d65c66ddbfa7ba197d900e7[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Tue Dec 4 23:07:22 2018 -0300
+
+    first commit yay
+
+[33mcommit c5e24d429afa97ab28c7dab4b69940849cc68c6f[m
+Author: Thyerry Nunes <thyerry.nunes@gmail.com>
+Date:   Tue Dec 4 22:45:08 2018 -0300
+
+    first commit
