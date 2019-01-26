@@ -5,33 +5,70 @@
     <meta charset="UTF-8">
     <title>Float</title>
     <style>
-        body {
-            background-color: #222;
+        html {
+            height: 100%;
         }
 
+        body {
+            background-color: #222;
+            height: 100%;
+            margin: 0;
+            text-shadow: #222 -3pt 3pt;
+            font-size: 50pt;
+
+        }
+
+        div {
+            text-align: center;
+            vertical-align: middle;
+            height: 50%;
+            width: 50%;
+            line-height: 500%;
+            transition: transform font-size;
+            transition-duration: 0.5s;
+        }
+
+        div:hover {
+            transform: scale(.95);
+            font-size: 150%;
+        }
+
+
         .c1 {
-            background-color: red;
+            background-color: rgb(255, 0, 0);
+            width: 50%;
+            height: 50%;
+            float: right;
         }
 
         .c2 {
             background-color: green;
+            float: left;
         }
-        
+
+
         .c3 {
             background-color: blue;
+            clear: right;
+            float: right;
         }
 
         .c4 {
-            background-color: orange;
+            background-color: yellow;
+            float: left;
         }
     </style>
 </head>
 
 <body>
-    <div class="c1"></div>
-    <div class="c2"></div>
-    <div class="c3"></div>
-    <div class="c4"></div>
+    <div class="c1">&#x1F332;</div>
+       
+    <div class="c2">&#x1F47A;</div>
+     
+    <div class="c3">&#x1F34D;</div>
+     
+    <div class="c4">&#x1F6A2;</div>
+     
 </body>
 
 </html>
