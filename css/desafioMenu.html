@@ -7,7 +7,96 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        /* ... */
+        html {
+            background-color: #ddd;
+        }
+
+        body {
+            margin: 0px;
+            font-family: sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .cabecalho {
+            width: 100%;
+            background-color: #222;
+            box-shadow: 0px 4px 6px aqua;
+            position: relative;
+            display: inline-block;
+            align-content: center;
+        }
+
+        .logo {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 10px;
+        }
+
+        .logo img {
+            align-content: center;
+            height: 50px;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .menu {
+            display: inline-block;
+            position: absolute;
+            width: 50em;
+            margin: none;
+        }
+        li {
+            display: inline-flex;
+            position: relative;
+            transition-duration: .2s;
+        }
+        li a{
+            transition: .5s;
+        }
+
+        li a:hover{
+            background-color: rgb(1, 189, 189);
+            color: black;
+        }
+
+        .autenticacao {
+            position: absolute;
+            float: right;
+            top: 30px;
+            right: 30px;
+            align-content: center;
+        }
+        .destaque {
+            background-color: red;
+            border-radius: 25px;
+            padding: 15px;
+        }
+        @media (max-width: 1000px){
+            .autenticacao{ display: none }
+        }
+        @media (max-width: 800px){
+            .menu{ display: none }
+            .menu-toggle{ 
+                display: block;
+                float: right;
+                color: #eee;
+                background-color: #555;
+                border: solid 1px #777;
+                border-radius: 5px;
+                height: 40px;
+                padding: 10px 20px;
+                margin: 20px 15px;
+            }
+        }
     </style>
 </head>
 
@@ -44,7 +133,10 @@
     </header>
 
     <script>
-        // ...
+        function cor(item){
+            const id = document.
+            id.style = "background-color: rgb(1, 189, 189);"
+        }
     </script>
 </body>
 
