@@ -5,7 +5,69 @@
     <meta charset="UTF-8">
     <title>Position</title>
     <style>
-        /* ... */
+        body {
+            font-family: sans-serif;
+        }
+
+        div {
+            font-size: 60px;
+            padding: 30px;
+            border: solid 5px #000;
+        }
+
+        .static {
+            top: 100px;
+            left: 100px;
+            background-color: steelblue;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 0px;
+            background-color: tomato;
+        }
+
+        .relative1 {
+            position: relative;
+            left: 50px;
+            top: 5px;
+            background-color: seagreen;
+        }
+
+        .absolute1 {
+            position: absolute;
+            left: 320px;
+            top: 120px;
+            background-color: violet;
+        }
+
+        .relative2 {
+            position: relative;
+            left: 250px;
+            top: 2000px;
+            width: 200px;
+            height: 200px;
+            background-color: slategray;
+        }
+
+        .absolute2 {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            height: 20px;
+            width: 20px;
+            background-color: orange;
+            font-size: 150px;
+            text-shadow: 0px -5px 6px #000;
+        }
+
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            background-color: #777;
+            top: 10px;
+        }
     </style>
 </head>
 
@@ -14,9 +76,9 @@
     <div class="fixed">Fixed</div>
     <div class="relative1">Relative</div>
     <div class="absolute1">Absolute</div>
-
+    desce lá em baixo &#x23EC; &#x2B07;
     <div class="relative2">
-        <div class="absolute2"></div>
+        <div class="absolute2">&#x1F479;</div>
     </div>
 
     <div class="sticky">Sticky</div>
