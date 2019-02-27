@@ -9,6 +9,7 @@
         body {
             margin: 0;
             display: flex;
+            font-family: 'Courier New', Courier, monospace;
         }
         
         .esquerda {
@@ -45,7 +46,27 @@
     </div>
     <div class="direita" wm-dropzone></div>
     <script>
-        // ...
+        const items = document.querySelectorAll('[wm-dropzone] .item')
+        items.forEach((item, index) => {
+            item.draggable = true
+            item.id = item.id || `draggable-item-${index}`
+            item.ondragstart = e =>
+                e.dataTransfer.setData('item-id', e.target.id)
+        })
+
+        const dropzones = document.querySelectorAll('[wm-dropzone]')
+        dropzones.forEach(dz => {
+            dz.ondragover = e => e.preventDefault()
+            dz.ondrop = function(e) {
+                const id = e.dataTransfer.getData('item-id')
+                const item = document.getElementById(id)
+
+                // Dropa o elemento em qualquer outro elemento
+                e.target.appendChild(item)
+                // Dropa o elemento somente em elementos marcados como wm-dropzone
+                //dz.appendChild(item)
+            }
+        })
     </script>
 </body>
 
