@@ -4,8 +4,8 @@ function novoElemento(tagName, className) {
     return elem
 }
 
-function MarioPipe(reversa = false) {
-    this.elemento = novoElemento('div', 'mario-pipes')
+function Barreira(reversa = false) {
+    this.elemento = novoElemento('div', 'barreira')
 
     const borda = novoElemento('div', 'borda')
     const corpo = novoElemento('div', 'corpo')
@@ -15,15 +15,15 @@ function MarioPipe(reversa = false) {
     this.setAltura = altura => corpo.style.height = `${altura}px`
 }
 
-/*const mp = new MarioPipe(true)
+/*const mp = new Barreira(true)
 mp.setAltura(200)
 document.querySelector('[wm-flappy]').appendChild(mp.elemento)*/
 
-function DoubleMarioPipes(altura, abertura, x) {
-    this.elemento = novoElemento('div', 'double-mario-pipes')
+function ParDeBarreiras(altura, abertura, x) {
+    this.elemento = novoElemento('div', 'par-de-barreiras')
 
-    this.superior = new MarioPipe(true)
-    this.inferior = new MarioPipe(false)
+    this.superior = new Barreira(true)
+    this.inferior = new Barreira(false)
 
     this.elemento.appendChild(this.superior.elemento)
     this.elemento.appendChild(this.inferior.elemento)
@@ -45,5 +45,42 @@ function DoubleMarioPipes(altura, abertura, x) {
 }
 
 
-const dmp = new DoubleMarioPipes(700, 325, 400)
-document.querySelector('[wm-flappy]').appendChild(dmp.elemento)
+/*const dmp = new ParDeBarreiras(700, 325, 400)
+document.querySelector('[wm-flappy]').appendChild(dmp.elemento)*/
+
+function Barreiras(altura, largura, abertura, espaco, notificarPonto ) {
+    this.pares = [
+        new ParDeBarreiras(altura, abertura, largura),
+        new ParDeBarreiras(altura, abertura, largura + espaco),
+        new ParDeBarreiras(altura, abertura, largura + espaco * 2),
+        new ParDeBarreiras(altura, abertura, largura + espaco * 3)
+    ]
+
+    const deslocamento = 3
+    this.animar = () => {
+        this.pares.forEach(par => {
+            par.setX(par.getX - deslocamento)
+
+            // quando o elemento sair da tela
+            if (par.getX() < -par.getLargura()) {
+                par.setX(par.getX() + espaco * this.pares.length)
+                par.sortearAbertura()
+            }
+
+            const meio = largura / 2
+            const cruzouMeio = par.getX() + deslocamento >= meio && par.getX() < meio
+
+            if (cruzouMeio) notificarPonto()
+        })
+    }
+}
+
+const barreiras = new Barreiras(700, 1100, 250, 400)
+const areaDoJogo = document.querySelector('[wm-flappy]')
+
+barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
+console.log(mps.animar)
+
+setInterval(() => {
+    barreiras.animar()
+}, 20)
