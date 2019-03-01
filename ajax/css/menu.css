@@ -3,7 +3,7 @@ body {
 }
 
 .menu-principal {
-    min-width: 500px;
+    min-width: 400px;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@ body {
 .menu-principal nav {
     display: inline-block;
     background-color: #fff;
-    min-width: 248px;
+    min-width: 198px;
 }
 
 .menu-principal a {
