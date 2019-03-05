@@ -61,7 +61,7 @@
             metodo: "get",
             sucesso(resposta) {
                 const estados = JSON.parse(resposta)
-
+                console.log('oi amor')
                 criarTabela(estados)
             },
             erro(e) {
