@@ -24,3 +24,4 @@ const Calculadora = {
         console.log(this._resultado)
     }
 }
+
