@@ -13,13 +13,25 @@
     <div id='conteudo'></div>
 
     <script>
-        const pessoas = [
-            { nome: 'Ana', nota: 9.1 },
-            { nome: 'Bianca', nota: 8.4 },
-            { nome: 'Carlos', nota: 7.6 },
-            { nome: 'Julia', nota: 9.7 }
-        ]
-        
-        // ...
+
+
+        $(document).ready(function () {
+            const pessoas = [
+                { nome: 'Ana', nota: 9.1 },
+                { nome: 'Bianca', nota: 8.4 },
+                { nome: 'Carlos', nota: 7.6 },
+                { nome: 'Julia', nota: 9.7 }
+            ]
+            const tabela = $("<table><tr><th>Nome</th><th>Nota</th></tr></table>")
+
+            pessoas.forEach(({ nome, nota }) => {
+                tabela.append(`<tr><td>${nome}</td><td>${nota}</td></tr>`)
+            })
+
+            $('#conteudo').append(tabela)
+        })
+
+
     </script>
 </body>
+<footer>mim de</footer>
