@@ -20,14 +20,38 @@
             padding: 50px;
             font-size: 3em;
             background-color: crimson;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <div>Animar!</div>
+    <div>DIRGRAÇA!</div>
 
     <script>
-        // ...
+        function alterarLargura(valor, duracao) {
+            $('div').animate({ width: `+=${valor}` }, duracao)
+        }
+
+        function moverDiagonal(valor, duracao) {
+            $('div').animate({ top: `+=${valor}`, left: `+=${valor}` }, duracao)
+        }
+
+        function girar(valor, duracao) {
+            $('div').animate({ transform: `+=${valor}` }, {
+                step: function (valor){
+                    $(this).css('transform', `rotate(${valor}deg)`)
+                },
+                duration: duracao
+            },'linear')          
+        }
+       
+        const pri = new Promise(() => {})
+
+        pri.then(alterarLargura(300, 100))
+            .then(alterarLargura(-300, 'slow'))
+            .then(moverDiagonal(140, 600))
+            .then(girar(3200, 3000))
+            
     </script>
 </body>
