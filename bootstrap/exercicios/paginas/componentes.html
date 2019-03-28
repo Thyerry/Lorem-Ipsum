@@ -98,9 +98,9 @@
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>Holy guacamole!</strong> You should check in on some of those fields below.
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+            <span aria-hidden="true">&times;</span>
         </button>
-      </div>
+    </div>
 </div>
 
 <h1 class="mt-5">4. Paginação -
@@ -144,14 +144,11 @@
 <!-- Tooltip -->
 <div>
     <div class="alert alert-warning">
-        Precisa chamar uma função JS <br/>
+        Precisa chamar uma função JS <br />
         <strong>E agora?</strong>
     </div>
 
-    <button class="btn btn-danger" 
-        data-toggle="tooltip" 
-        data-placement="top" 
-        title="Pense antes">
+    <button class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Pense antes">
         Excluir
     </button>
 </div>
@@ -166,7 +163,7 @@
 
 <!-- Slider -->
 <div>
-    <div id="slider" class="carousel slide"  data-ride="carousel">
+    <div id="slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner bg-dark">
             <div class="carousel-item active">
                 <img src="/imgs/slide1.png" alt="Slide1" class="d-block mx-auto">
@@ -184,7 +181,7 @@
         <a href="#slider" class="carousel-control-next" data-slide="next">
             <span class="carousel-control-next-icon"></span>
         </a>
-        
+
     </div>
 </div>
 
@@ -197,6 +194,55 @@
 <hr>
 
 <!-- Accordion -->
+<div>
+    <div class="mb-5" id="accordion">
+        <div class="card">
+            <div class="card-header" id="pergunta1">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#resposta1">
+                        Qual o animal que come com rabo?
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse" id="resposta1" data-parent="#accordion">
+                <div class="card-body">
+                    todos, por que nenhum animal tira o rabo pra comer
+                    KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="pergunta2">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#resposta2">
+                        50kg da pra vinte comer?
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse" id="resposta2" data-parent="#accordion">
+                <div class="card-body">
+                    KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="pergunta3">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#resposta3">
+                        bubuubbu
+                    </button>
+                </h5>
+            </div>
+            <div class="collapse" id="resposta3" data-parent="#accordion">
+                <div class="card-body">
+                    OVERDRIVE!
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <script>
     $('[data-toggle="tooltip"]').tooltip()
