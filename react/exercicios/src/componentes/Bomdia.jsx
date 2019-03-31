@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
 export default props => [
     <h1 key='h1'>Bom dia {props.nome}!</h1>,
