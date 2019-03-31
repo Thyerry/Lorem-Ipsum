@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Primeiro from './componentes/Primeiro'
 
-ReactDOM.render(<Primeiro />, document.getElementById('root'))
+import Bomdia from './componentes/Bomdia'
+
+ReactDOM.render(<Bomdia nome='Thyerry' idade={50}/>, document.getElementById('root'))
